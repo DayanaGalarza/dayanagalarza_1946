@@ -27,5 +27,5 @@ main(){
     cin >> a;
     cout << "Ingrese el valor 2 : ";
     cin >> b;
-    cout << "La suma de los numeros es: " << suma
+    cout << "La suma de los numeros es: " << suma ;
 }
