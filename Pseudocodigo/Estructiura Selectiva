@@ -1,0 +1,6 @@
+inicio
+    entero num;
+    leer num;
+    r = num mod 3
+    si r = 0 entonces
+        escribir "es multiplo de tres"
