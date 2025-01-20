@@ -1,3 +1,4 @@
+// programa para definir una tabla o matriz
 #include <iostream>
 using namespace std;
 
