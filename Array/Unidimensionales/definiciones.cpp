@@ -11,4 +11,3 @@ main ()
     cout << "El primer elemnto mitad sexo es :" <<endl<<sexo[5/2]<<endl;
     return 0;
 }
-for (int i = 0 ;)
