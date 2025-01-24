@@ -78,9 +78,9 @@ main (){
     cout << "Vector original: ";
     muestraVector (vec, ne);
     cout << endl;
-    cout << "El numero de comparaciones burbuja v1 = " << ordenaBurbujaV1 (vec, ne);
-    cout << "El numero de comparaciones burbuja v2 = " << ordenaBurbujaV2 (vec, ne);
-    cout << "El numero de comparaciones burbuja v3 = " << ordenaBurbujaV3 (vec, ne);
+    cout << "El numero de comparaciones burbuja v1 = " << ordenaBurbujaV1 (vec, ne) <<endl;
+    cout << "El numero de comparaciones burbuja v2 = " << ordenaBurbujaV2 (vec, ne) <<endl;
+    cout << "El numero de comparaciones burbuja v3 = " << ordenaBurbujaV3 (vec, ne) <<endl;
     ordenaBurbujaV1 (vec, ne);
     cout << "\nVector ordenado: "<<endl;
     muestraVector (vec, ne);
