@@ -25,11 +25,11 @@ string identificarTipoCadena(const string& cadena) {
     
     // Determinar el tipo de la cadena
     if (esNumerica) {
-        return "Numérica";
+        return "Numerica";
     } else if (esAlfabetica) {
-        return "Alfabética"; 
+        return "Alfabetica"; 
     } else if (esAlfanumerica) {
-        return "Alfanumérica";
+        return "Alfanumerica";
     } else {
         return "Desconocido";
     }
@@ -43,5 +43,4 @@ int main() {
 
     cout << "La cadena '" << cadena << "' es de tipo: " << identificarTipoCadena(cadena) << endl;
 
-    return 0;
 }
