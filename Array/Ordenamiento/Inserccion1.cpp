@@ -38,7 +38,7 @@ int ordenaInserccion(int v[], int n) {
 
 int main() {
     int ne, comparaciones;
-    cout << "Ingresa el número de elementos del vector: ";
+    cout << "Ingresa el numero de elementos del vector: ";
     cin >> ne;
     int vec[ne];
     llenaVector(vec, ne);
@@ -47,6 +47,6 @@ int main() {
     comparaciones = ordenaInserccion(vec, ne);
     cout << "\nVector ordenado: ";
     verVector(vec, ne);
-    cout << "\nEl número de comparaciones = " << comparaciones << endl;
+    cout << "\nEl numero de comparaciones = " << comparaciones << endl;
     return 0;
 }

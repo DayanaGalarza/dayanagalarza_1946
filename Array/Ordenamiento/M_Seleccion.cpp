@@ -6,8 +6,8 @@ using namespace std;
 void llenaVector (int v[], int n){
     srand(time(NULL)); // función semilla para generar numeros
     for (int i=0; i<n; i++){
-        //v[i] = rand() % 20 + 1;
-        cin >> v[i];
+        v[i] = rand() % 20 + 1;
+        //cin >> v[i];
     }
 }
 
@@ -16,7 +16,7 @@ void verVector (int v[], int n){
         cout << v[i] << "\t";
     }
 }
-int ordenaSeccion (int v[], int n){
+int ordenaSeleccion (int v[], int n){
     int contador=0, aux;
     bool cambios = true;
     for (int i=0; i<n-1 && cambios; i++){
@@ -41,7 +41,7 @@ main(){
     llenaVector (vec, ne);
     cout << " Vector original: \n";
     verVector (vec, ne);
-    comparaciones= ordenaSeccion(vec, ne);
+    comparaciones= ordenaSeleccion(vec, ne);
     cout <<"\nVector ordenado :"; 
     verVector (vec, ne);  
     cout << "\nEl numero de comparaciones = " << comparaciones;

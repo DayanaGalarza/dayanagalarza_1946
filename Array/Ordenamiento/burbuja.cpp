@@ -34,7 +34,7 @@ int ordenaBurbujaV2 (int v[], int n){
             contador++;
             if (v[j] > v[j + 1]){
                 aux = v[j];
-                v[j] = v[j + 1];
+                v[j] = v[j + 1]; 
                 v[j + 1] = aux;
             }
         }
