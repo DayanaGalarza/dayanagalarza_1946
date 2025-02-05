@@ -6,8 +6,8 @@ using namespace std;
 void llenaVector (int v[], int n){
     srand(time(NULL)); // función semilla para generar numeros8
     for (int i=0; i<n; i++){
-        //v[i] = rand() % 20 + 1;
-        cin >> v[i];
+        v[i] = rand() % 20;
+        //cin >> v[i];
     }
 }
 
