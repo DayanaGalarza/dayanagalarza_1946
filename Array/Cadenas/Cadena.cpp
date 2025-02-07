@@ -14,13 +14,18 @@ for (int i=0; cad[i]!='\0'; i++)
 
 }
 int contarPalabras(char cad[]){
-    int palabra = 1;
+    int palabras = 0;
+    bool palabra=false;
+
     for ( int i=0; cad[i]!='\0'; i++)
     {
-        if(cad[i]== ' ' && cad[i+1] != ' '){
-            palabra++;
+        if(cad[i]== ' ' && (cad[i+1] != ' ' && (cad[i+1]!='\0')))
+        {
+            palabras++;
+            palabra= true;
         }
     }
+    (palabra) ? palabras++ : palabras;
     return palabra;
 }
 main ()
