@@ -2,13 +2,16 @@
 #include <time.h>
 #include <iostream>
 
-namespace vectorn {
-    void llenarVector(int v[], int n, int ri=0, int rs=10){
+namespace vectorn 
+{
+    void llenarVector(int v[], int n, int ri=0, int rs=10)
+    {
         int i;
-        for(i=0; i<n; i++){
+        for(i=0; i<n; i++)
+        {
             v[i] = rand() % (rs-ri+1) + ri; 
             //v[i] = ri + rand() % (rs+1-ri);
-            //variable= limite_inferior + rand() % (limite_superior +1 - limite_inferior)
+            //variable = limite_inferior + rand() % (limite_superior +1 - limite_inferior)
         }
     }
 }
