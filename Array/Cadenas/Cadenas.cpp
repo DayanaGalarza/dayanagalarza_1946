@@ -14,6 +14,14 @@ for (int i=0; cad[i]!='\0'; i++)
 
 }
 int contarPalabras(char cad[]){
+    //casos que debe resolver la funcion 
+    /*
+        1. la casa es blanca = 3 palabras
+        2.        la casas = 2 palabras
+        3. la = 1 palabra
+        4. g a d = 0 palabras 
+        5.          = 0 palabras
+    */
     int palabras = 0;
     bool palabra=false;
 
