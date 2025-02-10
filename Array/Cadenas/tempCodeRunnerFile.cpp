@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 void llenarCadena(char cad[], int n = 50) {
@@ -24,12 +25,7 @@ bool esVocal(char c) {
 }
 
 bool esPalabraValida(char palabra[]) {
-    int longitud = 0;
-    
-    // Calcular la longitud de la palabra manualmente
-    while (palabra[longitud] != '\0') {
-        longitud++;
-    }
+    int longitud = strlen(palabra);
     
     // La palabra debe tener entre 1 y 15 caracteres
     if (longitud < 1 || longitud > 15) {
