@@ -33,5 +33,9 @@ main()
     int encontrado = cadena1.find("ol");
     cout<<"encontrado: "<<encontrado<<endl;
     (cadena1.find("ol")==string::npos)?cout<<"No encontrado ":cout<<encontrado; //:: accede a una libreria del tipo anterior como constante
-
+    string numerostr= "123";
+    int numero = stoi(numerostr);
+    cout <<endl;
+    cout << numero << endl;
+    cin >> numero;
 }
