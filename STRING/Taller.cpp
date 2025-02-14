@@ -42,7 +42,7 @@ int main()
     cout << subcad << endl;
 
     //Reemplazar parte de la cadena 
-    cadena.replace(6,5,"accion");
+    cadena.replace(6,2,"accion");
     cout << cadena << endl;
 
     return 0;

@@ -4,6 +4,7 @@ using namespace std;
 main() 
 {
     string cadena1={"informatica"};
+    string cadena4;
     const char *auxiliar;
     string cadena2(cadena1); //cadena2 = cadena1
     string cadena3(10,'*');
@@ -23,5 +24,14 @@ main()
     cout <<"Tamano maximo: " << cadena1.max_size()<<endl;
     //tamaño en bites del objeto string que ocupa actualmente
     cout << "Capacidad: " << cadena1.capacity()<<endl;
+    //uando el metodo compare para comparar dos cadenas
+    cout<<" cad1= "<<cadena1<<" cad2= "<<cadena2<<endl; 
+    cadena1= "mola";
+    cadena2 = "cola";
+    int comparacion =cadena1. compare(cadena2);
+    cout<<"Comparacion: " <<comparacion<<endl;
+    int encontrado = cadena1.find("ol");
+    cout<<"encontrado: "<<encontrado<<endl;
+    (cadena1.find("ol")==string::npos)?cout<<"No encontrado ":cout<<encontrado; //:: accede a una libreria del tipo anterior como constante
 
 }

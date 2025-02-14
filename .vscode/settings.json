@@ -38,7 +38,17 @@
     "sstream": "cpp",
     "stdexcept": "cpp",
     "streambuf": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "bit": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "cstring": "cpp",
+    "ctime": "cpp",
+    "functional": "cpp",
+    "iterator": "cpp",
+    "numeric": "cpp",
+    "random": "cpp",
+    "numbers": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
