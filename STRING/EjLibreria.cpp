@@ -5,7 +5,7 @@ using namespace std;
 main()
 {
     string palabras;
-    cout<<"ingrese una palabra: ";
+    cout<<"Ingrese una palabra: ";
     getline(cin, palabras);
     reemplazar(palabras);
     cout<<"La cadena final es: "<<palabras<<endl;
