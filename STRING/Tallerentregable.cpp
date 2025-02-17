@@ -37,8 +37,9 @@ int main() {
     cout << "Ingrese la nueva palabra o frase: ";
     getline(cin, reemplazar);
     
-    reemplazarPalabra(cadena, buscar, reemplazar);
-    cout << "Cadena modificada: " << cadena << endl;
+    reemplazarPalabra(cadena, buscar, reemplazar); 
     
     return 0;
 }
+
+// Ejemplo de ejecución:
