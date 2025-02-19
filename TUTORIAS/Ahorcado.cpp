@@ -73,19 +73,10 @@ void mostrarMuneco(int intentos) {
     }
 }
 
-// Función para convertir string a minúsculas
-string convertirAMinusculas(string palabra) {
-    string resultado = palabra;
-    for(int i = 0; i < palabra.length(); i++) {
-        resultado[i] = tolower(palabra[i]);
-    }
-    return resultado;
-}
-
 string palabraAleatoria(string palabras[]) {
     srand(time(NULL));
     int numero = rand() % 5;
-    return convertirAMinusculas(palabras[numero]); // Convertir a minúsculas al seleccionar
+    return palabras[numero]; 
 }
 
 int opciones() {
@@ -94,13 +85,14 @@ int opciones() {
         cout << "1. Deportes" << endl;
         cout << "2. Animales" << endl;
         cout << "3. Frutas" << endl;
-        cout << "Ingrese opcion (1-3): ";
+        cout << "4. Paises" << endl;
+        cout << "Ingrese opcion (1-4): ";
         cin >> op;
         
-        if(op < 1 || op > 3) {
+        if(op < 1 || op > 4) {
             cout << "Opcion invalida. Intente nuevamente." << endl;
         }
-    } while(op < 1 || op > 3);
+    } while(op < 1 || op > 4);
     return op;
 }
 
@@ -109,48 +101,30 @@ int main() {
     int op, intentosFallidos = 0;
     char letra;
     bool letraEncontrada;
-    string letrasUsadas = "";
 
     cout << "Juego del Ahorcado" << endl;
     cout << "-----------------" << endl;
     cout << "Elige una categoria" << endl;
     
     op = opciones();
-    (op == 1) ? deportes(palabras) : (op == 2) ? animales(palabras) : frutas(palabras);
+    (op == 1) ? deportes(palabras) : (op == 2) ? animales(palabras) : (op == 2) ? frutas(palabras) : paises(palabras);
     
     palabraSeleccionada = palabraAleatoria(palabras);
     string palabraMostrar(palabraSeleccionada.length(), '_');
     
     while (intentosFallidos < 6 && palabraMostrar != palabraSeleccionada) {
-        system("cls"); // Usar "clear" en Linux/Mac
+        system("cls"); 
         
-        // Mostrar estado actual
         cout << "\nPalabra a adivinar: ";
         for (int i = 0; i < palabraMostrar.length(); i++) {
             cout << palabraMostrar[i] << " ";
         }
         
-        cout << "\n\nLetras usadas: " << letrasUsadas << endl;
         mostrarMuneco(intentosFallidos);
         cout << "\nIntentos fallidos: " << intentosFallidos << "/6" << endl;
-        
-        // Pedir letra al usuario
         cout << "\nIngrese una letra: ";
         cin >> letra;
-        letra = tolower(letra); // Convertir entrada a minúscula
-        
-        // Verificar si la letra ya fue usada
-        if(letrasUsadas.find(letra) != string::npos) {
-            cout << "\nYa usaste esa letra! Intenta con otra." << endl;
-            system("pause");
-            continue;
-        }
-        
-        // Agregar letra a las usadas
-        letrasUsadas += letra;
-        letrasUsadas += " ";
-        
-        // Verificar si la letra está en la palabra
+
         letraEncontrada = false;
         for (int i = 0; i < palabraSeleccionada.length(); i++) {
             if (palabraSeleccionada[i] == letra) {
@@ -165,16 +139,14 @@ int main() {
             system("pause");
         }
     }
-    
-    // Mostrar resultado final
+
     system("cls");
     mostrarMuneco(intentosFallidos);
     
     if (intentosFallidos < 6) {
-        cout << "\nFelicidades! Has ganado. La palabra era: " << palabraSeleccionada << endl;
+        cout << "\nFelicidades. Has ganado. La palabra era: " << palabraSeleccionada << endl;
     } else {
-        cout << "\nHas perdido! La palabra era: " << palabraSeleccionada << endl;
+        cout << "\nHas perdido. La palabra era: " << palabraSeleccionada << endl;
     }
-    
-    return 0;
+
 }
