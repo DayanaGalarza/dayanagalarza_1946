@@ -141,7 +141,7 @@ int main() {
         
         // Verificar si la letra ya fue usada
         if(letrasUsadas.find(letra) != string::npos) {
-            cout << "\n¡Ya usaste esa letra! Intenta con otra." << endl;
+            cout << "\nYa usaste esa letra! Intenta con otra." << endl;
             system("pause");
             continue;
         }
@@ -161,7 +161,7 @@ int main() {
         
         if (!letraEncontrada) {
             intentosFallidos++;
-            cout << "\n¡Letra incorrecta!" << endl;
+            cout << "\nLetra incorrecta" << endl;
             system("pause");
         }
     }
@@ -171,9 +171,9 @@ int main() {
     mostrarMuneco(intentosFallidos);
     
     if (intentosFallidos < 6) {
-        cout << "\n¡Felicidades! Has ganado. La palabra era: " << palabraSeleccionada << endl;
+        cout << "\nFelicidades! Has ganado. La palabra era: " << palabraSeleccionada << endl;
     } else {
-        cout << "\n¡Has perdido! La palabra era: " << palabraSeleccionada << endl;
+        cout << "\nHas perdido! La palabra era: " << palabraSeleccionada << endl;
     }
     
     return 0;
