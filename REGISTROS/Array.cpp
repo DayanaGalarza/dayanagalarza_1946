@@ -19,7 +19,7 @@ int main() {
     cin >> ne;
     cin.ignore();
 
-    estudiante estudiantes[ne]; 
+    estudiante estudiantes[ne],__shrink_to_fit_aux; 
     
     for (int i = 0; i < ne; i++) {
         cout << "Ingrese el id del estudiante: ";

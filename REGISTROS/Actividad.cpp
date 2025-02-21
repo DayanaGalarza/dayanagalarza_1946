@@ -14,7 +14,7 @@ struct {
     int telefono;
     int adeuda;
     int codigoci;
-}cv1;
+}cv1;  
 
 
 struct {
