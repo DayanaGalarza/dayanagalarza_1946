@@ -23,7 +23,7 @@ main(){
 
 /*hacer un listado con id nombre nota 1 nota 2 promedio sacar media aritmetica (promedio total) desviacion estandar y z estandarizada categoria A z>1 B z=0,1 C 0 -1 D -1...
 hacer un menu donde tenga 
-listado de resultado 
-añadir estudiante 
-elimina estudiante
-salir*/
+1.listado de resultado 
+2.añadir estudiante 
+3.elimina estudiante
+4.salir*/
