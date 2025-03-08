@@ -1,0 +1,23 @@
+ID   PRODUCTO       CANTIDAD TOTAL PRECIO    NORTE             CENTRO         SUR            ESTE           
+-------------------------------------------------------------------------------
+1    Laptop         5              1200.00   5              0              0              0              
+2    Mouse          15             25.00     0              15             0              0              
+3    Teclado        8              45.00     0              0              8              0              
+4    Monitor        3              250.00    0              0              0              3              
+5    Laptop         2              1200.00   0              2              0              0              
+6    Impresora      4              180.00    4              0              0              0              
+7    Mouse          20             25.00     0              0              20             0              
+8    Webcam         6              60.00     0              0              0              6              
+9    Teclado        10             45.00     10             0              0              0              
+10   Monitor        7              250.00    0              7              0              0              
+
+Recaudación total de la empresa: 13665.00
+Recaudación total por sucursal:
+Norte: 7170.00
+Centro: 4525.00
+Sur: 860.00
+Este: 1110.00
+
+Sucursal con mayor recaudación: Norte
+Cantidad total de artículos vendidos en Sur: 28
+Cantidad de teclados vendidos en Norte: 10
